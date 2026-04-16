@@ -1,6 +1,8 @@
 package basic.question05;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 
 /**
  * 第8章 条件分岐
@@ -9,6 +11,16 @@ import java.io.IOException;
 public class Question05_1 {
 
 	public static void main(String[] args) throws IOException {
+		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+		System.out.println("年齢を入力してください");
+		String str = reader.readLine();
+		int age = Integer.parseInt(str);
+		if (age < 20) {
+			System.out.println("20歳未満なので、お酒は、提供できません。");
+
+		} else {
+			System.out.println("20歳以上なので、お酒の提供は可能です。");
+		}
 
 		// TODO:ここに実装
 

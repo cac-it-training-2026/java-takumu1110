@@ -7,8 +7,12 @@ package basic.question03;
 public class Question03_1 {
 
 	public static void main(String[] args) {
+		int price = 30;
+		int totalBudget = 300;
+		int quantity = (totalBudget / price);
+		System.out.println("商品の購入個数は、" + quantity + "です。");
 
 		// TODO:ここに実装
-		
+
 	}
 }
